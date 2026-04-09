@@ -3,26 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IF · 水晶能量建議報告</title>
+<title>水晶能量建議報告</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --cream:#c2cedc;       /* 頁面背景淺藍 */
-  --gold:#8a95a9;        /* 主強調色 灰藍 */
-  --gold-light:#a8b3c4;  /* 較淺灰藍 */
-  --gold-dark:#ffffff;   /* 卡片內標題 / 強調色 → 白 */
-  --deep:#2c3a4a;        /* 深色表面（按鈕底） */
-  --mid:#e0e6ef;         /* 卡片內副文字 → 偏白 */
+  --cream:#faf6f0; --gold:#c9a96e; --gold-light:#e8d5b0;
+  --gold-dark:#9a7a4a; --deep:#2c1f0e; --mid:#5c4a30;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--cream);color:var(--deep);font-family:'Noto Serif TC',serif;min-height:100vh;
-  background-image:radial-gradient(ellipse at 10% 20%,rgba(138,149,169,.08) 0%,transparent 50%),
-  radial-gradient(ellipse at 90% 80%,rgba(168,179,196,.2) 0%,transparent 50%);}
+  background-image:radial-gradient(ellipse at 10% 20%,rgba(201,169,110,.08) 0%,transparent 50%),
+  radial-gradient(ellipse at 90% 80%,rgba(232,224,240,.2) 0%,transparent 50%);}
 header{text-align:center;padding:48px 24px 32px;
-  background:linear-gradient(180deg,rgba(138,149,169,.07) 0%,transparent 100%);}
+  background:linear-gradient(180deg,rgba(201,169,110,.07) 0%,transparent 100%);}
 .header-gem{font-size:2.6rem;margin-bottom:8px;animation:float 4s ease-in-out infinite;}
-.brand-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;
-  letter-spacing:.5em;color:#5c6b80;margin-bottom:6px;padding-left:.5em;}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,4vw,2.6rem);font-weight:300;
   letter-spacing:.18em;color:var(--deep);margin-bottom:6px;}
@@ -31,9 +25,9 @@ h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,4vw,2.6rem);fon
 .divider-line{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .divider-gem{color:var(--gold);}
 .container{max-width:860px;margin:0 auto;padding:0 20px 60px;}
-.card{background:rgba(138,149,169,.88);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);
-  border-radius:16px;padding:28px 32px;margin-bottom:22px;color:#fff;
-  box-shadow:0 4px 24px rgba(44,58,74,.18),0 1px 4px rgba(44,58,74,.1);}
+.card{background:rgba(255,255,255,.72);backdrop-filter:blur(8px);border:1px solid rgba(201,169,110,.25);
+  border-radius:16px;padding:28px 32px;margin-bottom:22px;
+  box-shadow:0 4px 24px rgba(44,31,14,.06),0 1px 4px rgba(201,169,110,.1);}
 .card-title{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;
   color:var(--gold-dark);letter-spacing:.12em;margin-bottom:20px;
   display:flex;align-items:center;gap:10px;}
@@ -41,24 +35,22 @@ h1{font-family:'Cormorant Garamond',serif;font-size:clamp(1.7rem,4vw,2.6rem);fon
 .form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
 .field{display:flex;flex-direction:column;gap:5px;}
 label{font-size:.72rem;letter-spacing:.2em;color:var(--mid);text-transform:uppercase;}
-input,select,textarea{background:rgba(60,72,90,.55);border:1px solid rgba(255,255,255,.35);
+input,select,textarea{background:rgba(250,246,240,.85);border:1px solid rgba(201,169,110,.3);
   border-radius:8px;padding:9px 13px;font-family:'Noto Serif TC',serif;font-size:.88rem;
-  color:#fff;outline:none;transition:border-color .2s,box-shadow .2s;width:100%;}
-input::placeholder,textarea::placeholder{color:rgba(255,255,255,.55);}
-input:focus,select:focus,textarea:focus{border-color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.18);}
+  color:var(--deep);outline:none;transition:border-color .2s,box-shadow .2s;width:100%;}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,169,110,.12);}
 select{cursor:pointer;appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23ffffff' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23c9a96e' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 12px center;padding-right:34px;}
-select option{background:#3c4a5e;color:#fff;}
 textarea{resize:vertical;}
 
 /* 顏色選擇 */
 .color-hint{font-size:.76rem;color:#aaa;margin-bottom:12px;}
 .color-grid{display:flex;flex-wrap:wrap;gap:7px;}
-.color-tag{display:inline-flex;align-items:center;gap:5px;border:1.5px solid rgba(138,149,169,.3);
+.color-tag{display:inline-flex;align-items:center;gap:5px;border:1.5px solid rgba(201,169,110,.3);
   border-radius:20px;padding:4px 11px;font-size:.82rem;color:var(--mid);cursor:pointer;
   transition:all .18s;user-select:none;background:rgba(255,255,255,.6);}
-.color-tag:hover{border-color:var(--gold);background:rgba(138,149,169,.08);}
+.color-tag:hover{border-color:var(--gold);background:rgba(201,169,110,.08);}
 .color-tag.good{background:#eaf6ea;border-color:#6ab46a;color:#2a7a2a;font-weight:600;}
 .color-tag.bad{background:#faeaea;border-color:#d46a6a;color:#9a2020;font-weight:600;}
 .color-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
@@ -71,7 +63,7 @@ textarea{resize:vertical;}
 .crystal-search-bar{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;align-items:center;}
 .crystal-search-bar input{flex:1;min-width:150px;}
 .element-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px;}
-.etab{padding:5px 14px;border-radius:20px;border:1px solid rgba(138,149,169,.3);
+.etab{padding:5px 14px;border-radius:20px;border:1px solid rgba(201,169,110,.3);
   font-size:.8rem;cursor:pointer;transition:all .15s;background:rgba(255,255,255,.6);color:var(--mid);}
 .etab:hover{border-color:var(--gold);}
 .etab.active{font-weight:600;color:white;}
@@ -83,21 +75,20 @@ textarea{resize:vertical;}
 .etab[data-el="全部"].active{background:var(--gold-dark);border-color:var(--gold-dark);}
 .crystal-dropdown{position:relative;}
 .crystal-results{position:absolute;top:100%;left:0;right:0;max-height:200px;overflow-y:auto;
-  background:white;border:1px solid rgba(138,149,169,.3);border-radius:8px;z-index:100;
-  box-shadow:0 8px 24px rgba(44,58,74,.12);display:none;}
+  background:white;border:1px solid rgba(201,169,110,.3);border-radius:8px;z-index:100;
+  box-shadow:0 8px 24px rgba(44,31,14,.12);display:none;}
 .crystal-results.show{display:block;}
-.crystal-result-item{padding:8px 14px;cursor:pointer;font-size:.85rem;border-bottom:1px solid rgba(138,149,169,.08);
+.crystal-result-item{padding:8px 14px;cursor:pointer;font-size:.85rem;border-bottom:1px solid rgba(201,169,110,.08);
   display:flex;align-items:center;gap:8px;}
-.crystal-result-item:hover{background:rgba(138,149,169,.08);}
+.crystal-result-item:hover{background:rgba(201,169,110,.08);}
 .crystal-result-item .el-badge{font-size:.7rem;padding:2px 6px;border-radius:10px;color:white;flex-shrink:0;}
 
 /* Crystal rows */
 .crystal-row{display:grid;grid-template-columns:180px 1fr auto;gap:10px;align-items:start;margin-bottom:12px;}
-.fn-display{background:rgba(60,72,90,.5);border:1px solid rgba(255,255,255,.25);border-radius:8px;
-  padding:9px 13px;font-family:'Noto Serif TC',serif;font-size:.87rem;color:#fff;
+.fn-display{background:rgba(250,246,240,.6);border:1px solid rgba(201,169,110,.2);border-radius:8px;
+  padding:9px 13px;font-family:'Noto Serif TC',serif;font-size:.87rem;color:var(--mid);
   line-height:1.7;resize:vertical;width:100%;}
-.fn-display::placeholder{color:rgba(255,255,255,.5);}
-.fn-display:focus{outline:none;border-color:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.18);}
+.fn-display:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,169,110,.1);}
 
 /* Number rows */
 .number-row{display:grid;grid-template-columns:120px 90px 1fr auto;gap:10px;align-items:start;margin-bottom:12px;}
@@ -106,27 +97,27 @@ textarea{resize:vertical;}
 .remove-btn{background:none;border:none;color:#c08080;cursor:pointer;font-size:1.05rem;
   padding:8px;border-radius:6px;transition:background .2s;margin-top:2px;}
 .remove-btn:hover{background:rgba(200,80,80,.1);}
-.add-btn{background:none;border:1px dashed rgba(138,149,169,.5);border-radius:8px;
+.add-btn{background:none;border:1px dashed rgba(201,169,110,.5);border-radius:8px;
   padding:8px 16px;font-family:'Noto Serif TC',serif;font-size:.81rem;color:var(--gold-dark);
   cursor:pointer;transition:all .2s;display:inline-flex;align-items:center;gap:5px;margin-top:4px;}
-.add-btn:hover{background:rgba(138,149,169,.08);border-color:var(--gold);}
+.add-btn:hover{background:rgba(201,169,110,.08);border-color:var(--gold);}
 .generate-btn{display:block;width:100%;max-width:340px;margin:28px auto 0;padding:15px 32px;
   background:linear-gradient(135deg,var(--gold-dark),var(--gold));color:var(--cream);border:none;
   border-radius:50px;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;
-  letter-spacing:.2em;cursor:pointer;box-shadow:0 6px 20px rgba(92,107,128,.35);
+  letter-spacing:.2em;cursor:pointer;box-shadow:0 6px 20px rgba(154,122,74,.35);
   transition:all .3s;text-transform:uppercase;}
-.generate-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(92,107,128,.45);}
+.generate-btn:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(154,122,74,.45);}
 .download-btn{display:flex;align-items:center;justify-content:center;gap:8px;margin:20px auto 0;
   padding:12px 28px;background:var(--deep);color:var(--gold-light);border:none;border-radius:50px;
   font-family:'Noto Serif TC',serif;font-size:.87rem;letter-spacing:.15em;cursor:pointer;
-  transition:all .3s;box-shadow:0 4px 14px rgba(44,58,74,.25);}
+  transition:all .3s;box-shadow:0 4px 14px rgba(44,31,14,.25);}
 .download-btn:hover{background:#1a0d00;}
 
 /* Preview */
 .preview-section{display:none;margin-top:28px;}
 .preview-section.show{display:block;}
-.preview-card{background:white;border:1px solid rgba(138,149,169,.2);border-radius:16px;
-  padding:36px;box-shadow:0 8px 32px rgba(44,58,74,.08);position:relative;overflow:hidden;}
+.preview-card{background:white;border:1px solid rgba(201,169,110,.2);border-radius:16px;
+  padding:36px;box-shadow:0 8px 32px rgba(44,31,14,.08);position:relative;overflow:hidden;}
 .preview-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;
   background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-dark));}
 .preview-header{text-align:center;margin-bottom:28px;}
@@ -134,21 +125,21 @@ textarea{resize:vertical;}
   letter-spacing:.2em;color:var(--deep);}
 .preview-header p{font-size:.74rem;letter-spacing:.3em;color:var(--gold-dark);margin-top:4px;}
 .info-table{width:100%;border-collapse:collapse;margin-bottom:18px;}
-.info-table td{padding:8px 12px;font-size:.87rem;border-bottom:1px solid rgba(138,149,169,.13);}
+.info-table td{padding:8px 12px;font-size:.87rem;border-bottom:1px solid rgba(201,169,110,.13);}
 .info-table td:first-child{color:var(--mid);font-size:.76rem;letter-spacing:.1em;width:35%;}
 .section-h{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;
   color:var(--gold-dark);letter-spacing:.15em;margin:20px 0 10px;
   padding-bottom:5px;border-bottom:1px solid var(--gold-light);}
 .crystal-item,.number-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;
-  border-bottom:1px dotted rgba(138,149,169,.18);font-size:.87rem;}
+  border-bottom:1px dotted rgba(201,169,110,.18);font-size:.87rem;}
 .crystal-name,.number-name{font-weight:600;color:var(--deep);min-width:110px;flex-shrink:0;}
 .crystal-fn,.number-fn{color:var(--mid);line-height:1.7;}
-.link-notice{margin-top:24px;padding:12px 16px;background:rgba(138,149,169,.07);
-  border-radius:10px;border:1px solid rgba(138,149,169,.18);text-align:center;
+.link-notice{margin-top:24px;padding:12px 16px;background:rgba(201,169,110,.07);
+  border-radius:10px;border:1px solid rgba(201,169,110,.18);text-align:center;
   font-size:.8rem;color:var(--mid);line-height:1.9;}
 
 /* Manual crystal form */
-.manual-form{background:rgba(194,206,220,.6);border:1px dashed rgba(138,149,169,.35);
+.manual-form{background:rgba(250,246,240,.6);border:1px dashed rgba(201,169,110,.35);
   border-radius:10px;padding:16px;margin-top:14px;}
 .manual-form-grid{display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end;}
 
@@ -167,93 +158,25 @@ textarea{resize:vertical;}
   color:var(--gold-dark);margin-bottom:20px;display:flex;justify-content:space-between;align-items:center;}
 .modal-close{background:none;border:none;font-size:1.4rem;cursor:pointer;color:#aaa;padding:4px 8px;}
 .modal-close:hover{color:var(--deep);}
-.history-table-wrap{overflow-x:auto;border-radius:10px;border:1px solid rgba(138,149,169,.2);}
+.history-table-wrap{overflow-x:auto;border-radius:10px;border:1px solid rgba(201,169,110,.2);}
 .history-table{width:100%;border-collapse:collapse;font-size:.79rem;}
-.history-table th{background:rgba(138,149,169,.1);color:var(--gold-dark);padding:8px 12px;
+.history-table th{background:rgba(201,169,110,.1);color:var(--gold-dark);padding:8px 12px;
   text-align:left;font-weight:600;letter-spacing:.06em;white-space:nowrap;
-  border-bottom:1px solid rgba(138,149,169,.2);}
-.history-table td{padding:7px 12px;border-bottom:1px solid rgba(138,149,169,.07);color:var(--deep);white-space:nowrap;}
+  border-bottom:1px solid rgba(201,169,110,.2);}
+.history-table td{padding:7px 12px;border-bottom:1px solid rgba(201,169,110,.07);color:var(--deep);white-space:nowrap;}
 .history-table tr:last-child td{border-bottom:none;}
-.history-table tr:hover td{background:rgba(138,149,169,.04);}
-.hist-btn{background:none;border:1px solid rgba(138,149,169,.3);border-radius:6px;padding:3px 9px;
+.history-table tr:hover td{background:rgba(201,169,110,.04);}
+.hist-btn{background:none;border:1px solid rgba(201,169,110,.3);border-radius:6px;padding:3px 9px;
   font-size:.73rem;cursor:pointer;color:var(--gold-dark);font-family:'Noto Serif TC',serif;
   transition:all .15s;margin-right:3px;}
-.hist-btn:hover{background:rgba(138,149,169,.1);}
+.hist-btn:hover{background:rgba(201,169,110,.1);}
 .hist-btn.del{border-color:rgba(200,80,80,.3);color:#c08080;}
 .hist-btn.del:hover{background:rgba(200,80,80,.08);}
 .admin-btn{position:fixed;bottom:24px;right:24px;background:var(--deep);color:var(--gold-light);
   border:none;border-radius:50px;padding:10px 20px;font-family:'Noto Serif TC',serif;
-  font-size:.8rem;cursor:pointer;box-shadow:0 4px 14px rgba(44,58,74,.3);z-index:200;
+  font-size:.8rem;cursor:pointer;box-shadow:0 4px 14px rgba(44,31,14,.3);z-index:200;
   display:flex;align-items:center;gap:6px;transition:all .2s;}
 .admin-btn:hover{background:#1a0d00;transform:translateY(-1px);}
-
-/* === 灰藍主題：白底元件強制深色文字覆寫 === */
-.crystal-results,
-.crystal-result-item{color:#2c3a4a;}
-.crystal-result-item:hover{background:rgba(138,149,169,.18);}
-.preview-card,.preview-card *{color:#2c3a4a;}
-.preview-card .section-h{color:#5c6b80;}
-.preview-card .info-table td:first-child{color:#5c6b80;}
-.preview-card .crystal-fn,
-.preview-card .number-fn{color:#5c6b80;}
-.preview-card .link-notice{color:#5c6b80;}
-
-/* Modal 整體：白底，所有文字強制深色 */
-.modal-box{color:#2c3a4a;background:white;}
-.modal-box *{color:#2c3a4a;}
-.modal-box .modal-title{color:#5c6b80;font-size:1.3rem;}
-.modal-box .modal-close{color:#888;}
-.modal-box .modal-close:hover{color:#2c3a4a;}
-.modal-box label{color:#5c6b80;}
-.modal-box input,.modal-box select,.modal-box textarea{
-  background:#f4f7fa;border-color:rgba(138,149,169,.4);color:#2c3a4a;}
-.modal-box input::placeholder,.modal-box textarea::placeholder{color:#9aa5b4;}
-.modal-box input:focus,.modal-box select:focus,.modal-box textarea:focus{
-  border-color:#8a95a9;box-shadow:0 0 0 3px rgba(138,149,169,.18);}
-.modal-box select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a95a9' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");}
-.modal-box select option{background:white;color:#2c3a4a;}
-.modal-box p,.modal-box span,.modal-box div{color:#2c3a4a;}
-.modal-box .add-btn{color:#5c6b80;border-color:rgba(138,149,169,.5);background:transparent;}
-.modal-box .add-btn:hover{background:rgba(138,149,169,.1);border-color:#8a95a9;}
-.modal-box .generate-btn{background:linear-gradient(135deg,#5c6b80,#8a95a9);color:#fff;}
-.modal-box strong{color:#2c3a4a;}
-.modal-box a{color:#5c6b80;}
-
-/* Sheets 連動區塊 */
-.modal-box [style*="color:var(--mid)"]{color:#5c6b80!important;}
-.modal-box [style*="color:var(--gold-dark)"]{color:#5c6b80!important;}
-
-/* 歷史記錄表格 */
-.history-table th{color:#5c6b80;background:rgba(138,149,169,.12);}
-.history-table td{color:#2c3a4a;}
-.history-table tr:hover td{background:rgba(138,149,169,.08);}
-.hist-btn{color:#5c6b80;border-color:rgba(138,149,169,.4);}
-.hist-btn:hover{background:rgba(138,149,169,.1);}
-.hist-btn.del{color:#c08080;border-color:rgba(200,80,80,.3);}
-.hist-btn.del:hover{background:rgba(200,80,80,.08);}
-
-/* 卡片內元件 */
-.manual-form{color:#fff;}
-.color-tag{color:#fff;background:rgba(60,72,90,.45);border-color:rgba(255,255,255,.35);}
-.color-tag:hover{background:rgba(60,72,90,.65);border-color:#fff;}
-.color-tag.good{background:#eaf6ea;border-color:#6ab46a;color:#2a7a2a;}
-.color-tag.bad{background:#faeaea;border-color:#d46a6a;color:#9a2020;}
-.color-hint{color:rgba(255,255,255,.75);}
-label{color:#fff;}
-.etab{color:#fff;background:rgba(60,72,90,.4);border-color:rgba(255,255,255,.35);}
-.etab:hover{border-color:#fff;}
-h1{color:#2c3a4a;}
-.subtitle{color:#5c6b80;}
-.add-btn{color:#fff;border-color:rgba(255,255,255,.5);}
-.add-btn:hover{background:rgba(255,255,255,.12);border-color:#fff;}
-.generate-btn{background:linear-gradient(135deg,#5c6b80,#8a95a9);color:#fff;
-  box-shadow:0 6px 20px rgba(44,58,74,.35);}
-.generate-btn:hover{box-shadow:0 10px 28px rgba(44,58,74,.45);}
-.download-btn{background:#2c3a4a;color:#fff;}
-.download-btn:hover{background:#1a2330;}
-.admin-btn{background:#2c3a4a;color:#fff;}
-.admin-btn:hover{background:#1a2330;}
-.toast{background:#2c3a4a;color:#fff;}
 
 @media(max-width:600px){
   .crystal-row{grid-template-columns:1fr}
@@ -267,10 +190,12 @@ h1{color:#2c3a4a;}
 <body>
 
 <header>
-  <div class="header-gem">💎</div>
-  <div class="brand-name">IF</div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:10px;">
+    <div class="header-gem" style="margin-bottom:0;">💎</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;letter-spacing:.25em;color:var(--gold-dark);">IF Crystal</div>
+  </div>
   <h1>水晶能量建議報告</h1>
-  <p class="subtitle">If You Seek It, You Are It.</p>
+  <p class="subtitle">Crystal Energy Consultation Report</p>
   <div class="divider">
     <div class="divider-line"></div><span class="divider-gem">✦</span><div class="divider-line"></div>
   </div>
@@ -433,7 +358,7 @@ h1{color:#2c3a4a;}
     </div>
 
     <!-- 修改密碼區塊 -->
-    <div id="changePwBox" style="display:none;background:rgba(138,149,169,.06);border:1px solid rgba(138,149,169,.2);border-radius:10px;padding:16px;margin-bottom:18px;">
+    <div id="changePwBox" style="display:none;background:rgba(201,169,110,.06);border:1px solid rgba(201,169,110,.2);border-radius:10px;padding:16px;margin-bottom:18px;">
       <div style="font-size:.85rem;font-weight:600;color:var(--gold-dark);margin-bottom:12px;">🔑 修改後台密碼</div>
       <div style="display:grid;grid-template-columns:1fr 1fr auto;gap:10px;align-items:end;">
         <div class="field">
@@ -450,7 +375,7 @@ h1{color:#2c3a4a;}
     </div>
 
     <!-- Google Sheets 連動設定 -->
-    <div style="background:rgba(138,149,169,.08);border:1px solid rgba(138,149,169,.25);border-radius:12px;padding:18px;margin-bottom:20px;">
+    <div style="background:rgba(201,169,110,.08);border:1px solid rgba(201,169,110,.25);border-radius:12px;padding:18px;margin-bottom:20px;">
       <div style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--gold-dark);margin-bottom:10px;">
         📊 Google Sheets 即時連動
         <span id="sheetsStatus" style="font-size:.75rem;font-weight:400;margin-left:10px;"></span>
@@ -481,7 +406,7 @@ h1{color:#2c3a4a;}
     </div>
 
     <!-- 匯入舊資料 -->
-    <div style="background:rgba(194,206,220,.8);border:1px dashed rgba(138,149,169,.4);border-radius:10px;padding:14px;margin-bottom:16px;">
+    <div style="background:rgba(250,246,240,.8);border:1px dashed rgba(201,169,110,.4);border-radius:10px;padding:14px;margin-bottom:16px;">
       <div style="font-size:.82rem;font-weight:600;color:var(--gold-dark);margin-bottom:8px;">📂 匯入舊版客戶資料</div>
       <div style="font-size:.76rem;color:var(--mid);margin-bottom:10px;line-height:1.7;">
         如果之前有用舊版 App 並匯出過 Excel，可以在這裡上傳回來。<br>
@@ -516,7 +441,6 @@ h1{color:#2c3a4a;}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lunar-javascript@1.6.13/lunar.js"></script>
 <script>
 // ══════════════════════════════════════════
 // 資料定義
@@ -610,54 +534,6 @@ const CRYSTALS_DEFAULT = [
 ];
 
 const NUMBER_CATEGORIES = ['健康','財運','貴人','靈性'];
-
-// 數字特質預設資料：類別 → 各號人的數字與特質解說
-const NUMBER_PRESETS = {
-  '健康': [
-    {p:'1號人',n:'804',d:'用穩定的土元素能量抑制 1 號人的急躁，讓行動更沉穩。'},
-    {p:'2號人',n:'434',d:'強化心理建設，減少 2 號人的內耗與情緒波動。'},
-    {p:'3號人',n:'514',d:'讓跳躍的思維落地，幫助 3 號人把創意轉化為健康的規律。'},
-    {p:'4號人',n:'054',d:'打破過度的僵化，讓 4 號人在穩定中仍保有靈活的生命力。'},
-    {p:'5號人',n:'134',d:'規整混亂的作息，為愛冒險的 5 號人提供身體的支撐力。'},
-    {p:'6號人',n:'214',d:'學會拒絕，不讓別人的問題影響自己的健康。'},
-    {p:'7號人',n:'034',d:'讓過度思考的大腦休息，連結身體的真實感受。'},
-    {p:'8號人',n:'114',d:'提醒 8 號人在追求成就時，也要顧及生命根基的穩固。'},
-    {p:'9號人',n:'994',d:'將高層次的理想落實到具體的自我照顧中。'},
-  ],
-  '財運': [
-    {p:'1號人',n:'178',d:'「一起發」，強調個人領袖魅力帶來的財富爆發力。'},
-    {p:'2號人',n:'998',d:'透過深厚的人脈積累與長期合作，迎來大筆財富。'},
-    {p:'3號人',n:'988',d:'讓名氣轉化為利潤，提升將創意變現的專注力。'},
-    {p:'4號人',n:'798',d:'藉由專業知識與貴人提攜，穩健地增加財庫。'},
-    {p:'5號人',n:'968',d:'「走就發」，將 5 號人的變動轉化為源源不絕的財源。'},
-    {p:'6號人',n:'958',d:'透過負責任的服務品質，贏得客戶的信任財。'},
-    {p:'7號人',n:'498',d:'運用精準的分析與智慧，發現市場中隱藏的金礦。'},
-    {p:'8號人',n:'758',d:'強化 8 號人的掌控力，讓事業規模與財運同步擴張。'},
-    {p:'9號人',n:'658',d:'實踐社會價值與夢想的同時，自然吸引財富回流。'},
-  ],
-  '靈性': [
-    {p:'1號人',n:'269',d:'讓剛強的 1 號人學會柔軟與慈悲，看見更高維度的視野。'},
-    {p:'2號人',n:'349',d:'提升直覺力，讓 2 號人在合作中能精準判斷風向。'},
-    {p:'3號人',n:'249',d:'強化內在的平靜，讓 3 號人的表達更有深度與靈魂。'},
-    {p:'4號人',n:'419',d:'啟發靈感，讓務實的 4 號人擁有預見未來的眼光。'},
-    {p:'5號人',n:'139',d:'讓 5 號人的變革帶有智慧，不再只是為了反對而反對。'},
-    {p:'6號人',n:'309',d:'開啟愛的最高智慧，讓服務他人成為一種能量的循環。'},
-    {p:'7號人',n:'839',d:'連結宇宙共時性，讓 7 號人的鑽研直接通往真相。'},
-    {p:'8號人',n:'469',d:'結合物質成功與心靈成長，達到內外平衡。'},
-    {p:'9號人',n:'189',d:'強化領導智慧，讓 9 號人的夢想具備改變世界的力量。'},
-  ],
-  '貴人': [
-    {p:'1號人',n:'897',d:'以強大的正氣磁場彈開小人，吸引志同道合的專業貴人。'},
-    {p:'2號人',n:'797',d:'修復敏感的人際連結，讓溝通變得透明、無誤會。'},
-    {p:'3號人',n:'967',d:'過濾掉無效社交，讓你的魅力只吸引到真正懂得欣賞你的人。'},
-    {p:'4號人',n:'597',d:'打破僵局，吸引能帶領你走出舒適圈的導師型貴人。'},
-    {p:'5號人',n:'947',d:'讓變動中的人際關係趨於穩定，守住優質的長期戰友。'},
-    {p:'6號人',n:'757',d:'減少情感勒索，讓 6 號人的付出得到應有的尊重。'},
-    {p:'7號人',n:'837',d:'識破謊言與偽善，讓心懷不軌的人自動遠離。'},
-    {p:'8號人',n:'917',d:'在高度競爭的環境中，吸引能互利互惠的高端合作夥伴。'},
-    {p:'9號人',n:'097',d:'守護純真的初心，避免被利用，吸引同等純粹的靈魂。'},
-  ],
-};
 const STORAGE_KEY = 'crystal_report_history';
 const SHEETS_URL_KEY = 'crystal_sheets_url';
 const SHEETS_SYNCED_KEY = 'crystal_sheets_synced';
@@ -681,48 +557,6 @@ function init() {
   addCrystalRow();
   addNumberRow();
   renderHistory();
-  document.getElementById('solar_birthday').addEventListener('change', onSolarBirthdayChange);
-  // 使用者手動編輯 → 清除 auto 旗標，之後系統就不會覆蓋
-  document.getElementById('lunar_birthday').addEventListener('input', e => { e.target.dataset.auto = ''; });
-  document.getElementById('year_period').addEventListener('input', e => { e.target.dataset.auto = ''; });
-}
-
-// 國曆生日變更時：自動帶出農曆生日 + 流年期間
-// 規則：欄位為空 或 之前是系統自動填入的 → 更新；使用者手動改過的 → 保留
-function onSolarBirthdayChange(e) {
-  const val = e.target.value; // YYYY-MM-DD
-  if (!val) return;
-  const [y, m, d] = val.split('-').map(Number);
-  if (!y || !m || !d) return;
-
-  const canOverwrite = el => !el.value.trim() || el.dataset.auto === '1';
-
-  // 農曆生日
-  const lunarInput = document.getElementById('lunar_birthday');
-  if (canOverwrite(lunarInput) && typeof Solar !== 'undefined') {
-    try {
-      const lunar = Solar.fromYmd(y, m, d).getLunar();
-      const isLeap = lunar.getMonth() < 0;
-      lunarInput.value = `農曆${isLeap ? '閏' : ''}${lunar.getMonthInChinese()}月${lunar.getDayInChinese()}`;
-      lunarInput.dataset.auto = '1';
-    } catch (err) { console.warn('農曆轉換失敗', err); }
-  }
-
-  // 流年期間
-  const periodInput = document.getElementById('year_period');
-  if (canOverwrite(periodInput)) {
-    const today = new Date();
-    const ty = today.getFullYear();
-    const todayStripped = new Date(ty, today.getMonth(), today.getDate());
-    const thisBday = new Date(ty, m - 1, d);
-    const startYear = todayStripped >= thisBday ? ty : ty - 1;
-    const start = new Date(startYear, m - 1, d);
-    const end = new Date(startYear + 1, m - 1, d);
-    end.setDate(end.getDate() - 1);
-    const fmt = dt => `${dt.getFullYear()}/${dt.getMonth() + 1}/${dt.getDate()}`;
-    periodInput.value = `${fmt(start)}-${fmt(end)}`;
-    periodInput.dataset.auto = '1';
-  }
 }
 
 function loadAllCrystals() {
@@ -934,77 +768,19 @@ function addNumberRow() {
   cat.innerHTML='<option value="">— 類別 —</option>';
   NUMBER_CATEGORIES.forEach(c=>cat.innerHTML+=`<option value="${c}">${c}</option>`);
 
-  // 數字欄位：包一層 wrapper，內含 select 與 input（手動模式時切換顯示）
-  const numWrap=document.createElement('div');
-  numWrap.style.display='flex'; numWrap.style.flexDirection='column'; numWrap.style.gap='4px';
-  const num=document.createElement('select'); num.id=id+'_n';
-  num.innerHTML='<option value="">— 先選類別 —</option>';
+  const num=document.createElement('input'); num.id=id+'_n';
+  num.type='text'; num.placeholder='數字';
   num.style.textAlign='center';
-  const numManual=document.createElement('input'); numManual.id=id+'_nm';
-  numManual.type='text'; numManual.placeholder='手動輸入數字';
-  numManual.style.textAlign='center'; numManual.style.display='none';
-  numWrap.appendChild(num); numWrap.appendChild(numManual);
 
   const ta=document.createElement('textarea'); ta.id=id+'_f';
   ta.className='fn-display'; ta.rows=2;
   ta.placeholder='補充說明（選填）';
 
-  // 類別變更：重建數字選項
-  cat.addEventListener('change', () => {
-    // 切回下拉模式
-    num.style.display=''; numManual.style.display='none'; numManual.value='';
-    populateNumberOptions(cat.value, num);
-    // 類別切換時若特質區是上一輪自動帶入的，清掉避免錯亂
-    if (ta.dataset.auto === '1') { ta.value=''; ta.dataset.auto=''; }
-  });
-
-  // 數字變更：選到「手動輸入」就切換為文字框；其他則自動帶入特質解說
-  num.addEventListener('change', () => {
-    if (num.value === '__manual__') {
-      num.style.display='none';
-      numManual.style.display='';
-      numManual.focus();
-      if (ta.dataset.auto === '1') { ta.value=''; ta.dataset.auto=''; }
-      return;
-    }
-    const presets = NUMBER_PRESETS[cat.value] || [];
-    const found = presets.find(p => p.n === num.value);
-    if (!found) return;
-    if (!ta.value.trim() || ta.dataset.auto === '1') {
-      ta.value = found.d;
-      ta.dataset.auto = '1';
-    }
-  });
-
-  // 手動模式下雙擊可切回下拉
-  numManual.addEventListener('dblclick', () => {
-    numManual.style.display='none';
-    num.style.display='';
-    num.value='';
-  });
-
-  // 使用者一旦手動編輯特質區，就取消自動覆蓋旗標
-  ta.addEventListener('input', () => { ta.dataset.auto = ''; });
-
   const rb=document.createElement('button'); rb.className='remove-btn'; rb.innerHTML='✕';
   rb.onclick=()=>{ row.remove(); numberRowIds=numberRowIds.filter(x=>x!==id); };
 
-  row.appendChild(cat); row.appendChild(numWrap); row.appendChild(ta); row.appendChild(rb);
+  row.appendChild(cat); row.appendChild(num); row.appendChild(ta); row.appendChild(rb);
   container.appendChild(row);
-}
-
-// 依類別填入數字下拉選項（含「手動輸入」選項）
-function populateNumberOptions(category, selectEl, keepValue) {
-  const presets = NUMBER_PRESETS[category] || [];
-  const manualOpt = '<option value="__manual__">✏️ 手動輸入…</option>';
-  if (!presets.length) {
-    selectEl.innerHTML = '<option value="">— 先選類別 —</option>' + manualOpt;
-    return;
-  }
-  selectEl.innerHTML = '<option value="">— 選擇數字 —</option>' +
-    presets.map(p => `<option value="${p.n}">${p.p} (${p.n})</option>`).join('') +
-    manualOpt;
-  if (keepValue) selectEl.value = keepValue;
 }
 
 // ══════════════════════════════════════════
@@ -1030,15 +806,7 @@ function collectData() {
     }).filter(Boolean),
     numbers: numberRowIds.map(id=>{
       const cat=document.getElementById(id+'_cat')?.value||'';
-      const sel=document.getElementById(id+'_n');
-      const manual=document.getElementById(id+'_nm');
-      let num='';
-      if (manual && manual.style.display !== 'none') {
-        num = (manual.value||'').trim();
-      } else if (sel) {
-        const v = (sel.value||'').trim();
-        num = v === '__manual__' ? '' : v;
-      }
+      const num=document.getElementById(id+'_n')?.value.trim()||'';
       const fn=document.getElementById(id+'_f')?.value.trim()||'';
       return (cat||num)?{cat,num,fn}:null;
     }).filter(Boolean),
@@ -1057,9 +825,8 @@ function generateReport() {
   let html=`
     <div class="preview-header">
       <div style="font-size:2rem;margin-bottom:6px">💎</div>
-      <div style="font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:600;letter-spacing:.5em;color:#5c6b80;margin-bottom:4px;">IF</div>
       <h2>水晶能量建議報告</h2>
-      <p>If You Seek It, You Are It.</p>
+      <p>Crystal Energy Consultation Report</p>
     </div>
     <div class="section-h">基本資料</div>
     <table class="info-table">
@@ -1097,7 +864,7 @@ function generateReport() {
       <tr><td>國曆流年數字</td><td>${d.lySolar||'（未填寫）'}</td></tr>
       <tr><td>農曆流年數字</td><td>${d.lyLunar||'（未填寫）'}</td></tr>
     </table>`;
-    if(d.lyContent) html+=`<div style="margin-top:10px;padding:14px 16px;background:rgba(255,255,255,.85);border-radius:8px;border-left:3px solid #8a95a9;font-size:.87rem;line-height:1.9;color:#2c3a4a;white-space:pre-wrap">${d.lyContent}</div>`;
+    if(d.lyContent) html+=`<div style="margin-top:10px;padding:14px 16px;background:rgba(250,246,240,.8);border-radius:8px;border:1px solid rgba(201,169,110,.2);font-size:.87rem;line-height:1.9;color:var(--mid);white-space:pre-wrap">${d.lyContent}</div>`;
   }
 
   html+=`<div class="link-notice">
@@ -1168,8 +935,8 @@ function downloadPDF() {
   * { box-sizing:border-box; margin:0; padding:0; }
   body {
     font-family:'Noto Serif TC',serif;
-    background:#c2cedc;
-    color:#2c3a4a;
+    background:#faf6f0;
+    color:#2c1f0e;
     padding:0;
   }
   .page {
@@ -1180,12 +947,12 @@ function downloadPDF() {
     min-height:100vh;
     position:relative;
   }
-  /* 頂部藍灰色條 */
+  /* 頂部金色條 */
   .page::before {
     content:'';
     display:block;
     height:6px;
-    background:linear-gradient(90deg,#5c6b80,#8a95a9,#5c6b80);
+    background:linear-gradient(90deg,#9a7a4a,#c9a96e,#9a7a4a);
     margin-bottom:40px;
     border-radius:3px;
   }
@@ -1194,15 +961,7 @@ function downloadPDF() {
     text-align:center;
     margin-bottom:36px;
     padding-bottom:24px;
-    border-bottom:1px solid #a8b3c4;
-  }
-  .brand-label {
-    font-family:'Cormorant Garamond',serif;
-    font-size:1rem;
-    font-weight:600;
-    letter-spacing:.5em;
-    color:#5c6b80;
-    margin-bottom:4px;
+    border-bottom:1px solid #e8d5b0;
   }
   .gem-icon { font-size:2.4rem; margin-bottom:10px; }
   .report-title {
@@ -1210,13 +969,13 @@ function downloadPDF() {
     font-size:2rem;
     font-weight:300;
     letter-spacing:.2em;
-    color:#2c3a4a;
+    color:#2c1f0e;
     margin-bottom:4px;
   }
   .report-sub {
     font-size:.72rem;
     letter-spacing:.35em;
-    color:#5c6b80;
+    color:#9a7a4a;
     text-transform:uppercase;
   }
   .divider-line {
@@ -1225,9 +984,9 @@ function downloadPDF() {
   }
   .divider-line::before,.divider-line::after {
     content:''; flex:1; height:1px;
-    background:linear-gradient(90deg,transparent,#8a95a9,transparent);
+    background:linear-gradient(90deg,transparent,#c9a96e,transparent);
   }
-  .divider-gem { color:#8a95a9; font-size:.7rem; }
+  .divider-gem { color:#c9a96e; font-size:.7rem; }
 
   /* 區塊 */
   .section { margin-bottom:28px; }
@@ -1235,16 +994,16 @@ function downloadPDF() {
     font-family:'Cormorant Garamond',serif;
     font-size:1.05rem;
     font-weight:600;
-    color:#5c6b80;
+    color:#9a7a4a;
     letter-spacing:.15em;
     padding-bottom:6px;
-    border-bottom:2px solid #a8b3c4;
+    border-bottom:2px solid #e8d5b0;
     margin-bottom:14px;
   }
 
   /* 資料表格 */
   .info-table { width:100%; border-collapse:collapse; }
-  .info-table tr { border-bottom:1px solid rgba(138,149,169,.2); }
+  .info-table tr { border-bottom:1px solid rgba(201,169,110,.12); }
   .info-table td {
     padding:8px 12px;
     font-size:.88rem;
@@ -1252,13 +1011,13 @@ function downloadPDF() {
     line-height:1.6;
   }
   .info-table td:first-child {
-    color:#5c6b80;
+    color:#5c4a30;
     font-size:.76rem;
     letter-spacing:.1em;
     width:32%;
     white-space:nowrap;
   }
-  .info-table td:last-child { color:#2c3a4a; font-weight:500; }
+  .info-table td:last-child { color:#2c1f0e; font-weight:500; }
 
   /* 顏色特殊樣式 */
   .good-color { color:#3a7a3a; }
@@ -1270,17 +1029,17 @@ function downloadPDF() {
     align-items:flex-start;
     gap:14px;
     padding:10px 0;
-    border-bottom:1px dotted rgba(138,149,169,.3);
+    border-bottom:1px dotted rgba(201,169,110,.2);
   }
   .item-label {
     font-weight:700;
-    color:#2c3a4a;
+    color:#2c1f0e;
     min-width:110px;
     flex-shrink:0;
     font-size:.9rem;
   }
   .item-value {
-    color:#5c6b80;
+    color:#5c4a30;
     line-height:1.75;
     font-size:.87rem;
   }
@@ -1289,37 +1048,37 @@ function downloadPDF() {
   .ly-content {
     margin-top:14px;
     padding:16px 18px;
-    background:rgba(194,206,220,.15);
-    border-left:3px solid #8a95a9;
+    background:rgba(201,169,110,.06);
+    border-left:3px solid #c9a96e;
     border-radius:0 8px 8px 0;
     font-size:.88rem;
     line-height:1.9;
-    color:#2c3a4a;
+    color:#5c4a30;
   }
 
   /* 頁尾 */
   .report-footer {
     margin-top:40px;
     padding-top:20px;
-    border-top:1px solid #a8b3c4;
+    border-top:1px solid #e8d5b0;
     text-align:center;
   }
   .footer-name {
     font-family:'Cormorant Garamond',serif;
     font-size:1rem;
     font-style:italic;
-    color:#5c6b80;
+    color:#9a7a4a;
     margin-bottom:10px;
   }
   .footer-link {
     font-size:.76rem;
-    color:#5c6b80;
+    color:#5c4a30;
     line-height:1.9;
   }
-  .footer-link a { color:#5c6b80; }
+  .footer-link a { color:#9a7a4a; }
   .footer-divider {
     font-size:.75rem;
-    color:#a8b3c4;
+    color:#e8d5b0;
     letter-spacing:.3em;
     margin:10px 0;
   }
@@ -1337,7 +1096,7 @@ function downloadPDF() {
 
   /* 列印按鈕 */
   .print-bar {
-    background:linear-gradient(135deg,#5c6b80,#8a95a9);
+    background:linear-gradient(135deg,#9a7a4a,#c9a96e);
     color:white;
     padding:14px 24px;
     text-align:center;
@@ -1350,7 +1109,7 @@ function downloadPDF() {
     justify-content:center;
     gap:8px;
   }
-  .print-bar:hover { background:linear-gradient(135deg,#3c4a5e,#5c6b80); }
+  .print-bar:hover { background:linear-gradient(135deg,#7a5a2a,#9a7a4a); }
 </style>
 </head>
 <body>
@@ -1364,9 +1123,8 @@ function downloadPDF() {
   <!-- 標題 -->
   <div class="report-header">
     <div class="gem-icon">💎</div>
-    <div class="brand-label">IF</div>
     <div class="report-title">水晶能量建議報告</div>
-    <div class="report-sub">If You Seek It, You Are It.</div>
+    <div class="report-sub">Crystal Energy Consultation Report</div>
     <div class="divider-line"><span class="divider-gem">✦</span></div>
   </div>
 
@@ -1762,21 +1520,9 @@ function loadRecord(id) {
     const left=line.slice(0,idx).trim().split(' ');
     addNumberRow();
     const nid=numberRowIds[numberRowIds.length-1];
-    const cs=document.getElementById(nid+'_cat');
-    const ni=document.getElementById(nid+'_n');
-    const nm=document.getElementById(nid+'_nm');
-    const catVal=left[0]||''; const numVal=left[1]||'';
-    if(cs){ cs.value=catVal; cs.dispatchEvent(new Event('change')); }
-    // 若數字屬於該類別預設清單則用下拉，否則切手動輸入
-    const presets = NUMBER_PRESETS[catVal] || [];
-    const inPresets = presets.some(p => p.n === numVal);
-    if (inPresets && ni) {
-      ni.value = numVal;
-    } else if (numVal && ni && nm) {
-      ni.style.display='none'; nm.style.display=''; nm.value=numVal;
-    }
-    const ta=document.getElementById(nid+'_f');
-    if(ta){ ta.value=line.slice(idx+1).trim(); ta.dataset.auto=''; }
+    const cs=document.getElementById(nid+'_cat'); if(cs) cs.value=left[0]||'';
+    const ni=document.getElementById(nid+'_n'); if(ni) ni.value=left[1]||'';
+    const ta=document.getElementById(nid+'_f'); if(ta) ta.value=line.slice(idx+1).trim();
   });
   if(!numberRowIds.length) addNumberRow();
   closeAdmin();
